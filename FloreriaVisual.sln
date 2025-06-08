@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35919.96
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FloreriaVisual", "FloreriaVisual\FloreriaVisual.vcxproj", "{9D4EED12-5CA0-D29D-83D6-661A522F6D2B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProgramaFloreria", "ProgramaFloreria\ProgramaFloreria.vcxproj", "{D4ACEADD-9627-902A-9F8A-04EE8AB34B18}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClasesFloreriaClientes", "ClasesFloreriaClientes\ClasesFloreriaClientes.vcxproj", "{A7550FEE-F8F3-82AA-DCB9-940E332E5C93}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClasesFloreria", "ClasesFloreria\ClasesFloreria.vcxproj", "{D7ECA296-3873-7723-E88F-1F609BA19BA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,22 +15,22 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9D4EED12-5CA0-D29D-83D6-661A522F6D2B}.Debug|x64.ActiveCfg = Debug|x64
-		{9D4EED12-5CA0-D29D-83D6-661A522F6D2B}.Debug|x64.Build.0 = Debug|x64
-		{9D4EED12-5CA0-D29D-83D6-661A522F6D2B}.Debug|x86.ActiveCfg = Debug|Win32
-		{9D4EED12-5CA0-D29D-83D6-661A522F6D2B}.Debug|x86.Build.0 = Debug|Win32
-		{9D4EED12-5CA0-D29D-83D6-661A522F6D2B}.Release|x64.ActiveCfg = Release|x64
-		{9D4EED12-5CA0-D29D-83D6-661A522F6D2B}.Release|x64.Build.0 = Release|x64
-		{9D4EED12-5CA0-D29D-83D6-661A522F6D2B}.Release|x86.ActiveCfg = Release|Win32
-		{9D4EED12-5CA0-D29D-83D6-661A522F6D2B}.Release|x86.Build.0 = Release|Win32
-		{A7550FEE-F8F3-82AA-DCB9-940E332E5C93}.Debug|x64.ActiveCfg = Debug|x64
-		{A7550FEE-F8F3-82AA-DCB9-940E332E5C93}.Debug|x64.Build.0 = Debug|x64
-		{A7550FEE-F8F3-82AA-DCB9-940E332E5C93}.Debug|x86.ActiveCfg = Debug|Win32
-		{A7550FEE-F8F3-82AA-DCB9-940E332E5C93}.Debug|x86.Build.0 = Debug|Win32
-		{A7550FEE-F8F3-82AA-DCB9-940E332E5C93}.Release|x64.ActiveCfg = Release|x64
-		{A7550FEE-F8F3-82AA-DCB9-940E332E5C93}.Release|x64.Build.0 = Release|x64
-		{A7550FEE-F8F3-82AA-DCB9-940E332E5C93}.Release|x86.ActiveCfg = Release|Win32
-		{A7550FEE-F8F3-82AA-DCB9-940E332E5C93}.Release|x86.Build.0 = Release|Win32
+		{D4ACEADD-9627-902A-9F8A-04EE8AB34B18}.Debug|x64.ActiveCfg = Debug|x64
+		{D4ACEADD-9627-902A-9F8A-04EE8AB34B18}.Debug|x64.Build.0 = Debug|x64
+		{D4ACEADD-9627-902A-9F8A-04EE8AB34B18}.Debug|x86.ActiveCfg = Debug|Win32
+		{D4ACEADD-9627-902A-9F8A-04EE8AB34B18}.Debug|x86.Build.0 = Debug|Win32
+		{D4ACEADD-9627-902A-9F8A-04EE8AB34B18}.Release|x64.ActiveCfg = Release|x64
+		{D4ACEADD-9627-902A-9F8A-04EE8AB34B18}.Release|x64.Build.0 = Release|x64
+		{D4ACEADD-9627-902A-9F8A-04EE8AB34B18}.Release|x86.ActiveCfg = Release|Win32
+		{D4ACEADD-9627-902A-9F8A-04EE8AB34B18}.Release|x86.Build.0 = Release|Win32
+		{D7ECA296-3873-7723-E88F-1F609BA19BA6}.Debug|x64.ActiveCfg = Debug|x64
+		{D7ECA296-3873-7723-E88F-1F609BA19BA6}.Debug|x64.Build.0 = Debug|x64
+		{D7ECA296-3873-7723-E88F-1F609BA19BA6}.Debug|x86.ActiveCfg = Debug|Win32
+		{D7ECA296-3873-7723-E88F-1F609BA19BA6}.Debug|x86.Build.0 = Debug|Win32
+		{D7ECA296-3873-7723-E88F-1F609BA19BA6}.Release|x64.ActiveCfg = Release|x64
+		{D7ECA296-3873-7723-E88F-1F609BA19BA6}.Release|x64.Build.0 = Release|x64
+		{D7ECA296-3873-7723-E88F-1F609BA19BA6}.Release|x86.ActiveCfg = Release|Win32
+		{D7ECA296-3873-7723-E88F-1F609BA19BA6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
