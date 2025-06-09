@@ -89,4 +89,100 @@ namespace ClasesFloreria {
 			return pila->Count;
 		}
 	};
+
+	public ref class datos_atencion
+	{
+	private:
+		datos^ cliente;
+		String^ direccion;
+	public:
+		datos_atencion(datos^ paciente, String^ direccion) {
+			this->cliente = cliente;
+			this->direccion = direccion;
+		}
+		datos^ getcliente() { return cliente; }
+		String^ getdireccion() { return direccion; }
+
+		void setpaciente(datos^ _cliente) { cliente = _cliente; }
+		void setsexo(String^ _direccion) { direccion = _direccion; }
+
+	};
+
+	public ref class lista_Atencion_floreria
+	{
+	private:
+		List <datos_atencion^>^ Lista; //defino la lista 
+
+	public:
+		lista_Atencion_floreria() {
+			Lista = gcnew List<datos_atencion^>();
+		}
+
+		void Agregar(datos_atencion^ c) {
+			Lista->Add(c);
+		}
+
+		datos_atencion^ Primero()
+		{
+			if (Lista->Count > 0)
+				return Lista[0];
+			else
+				return nullptr;
+		}
+
+		datos_atencion^ Ultimo()
+		{
+			if (Lista->Count > 0)
+				return Lista[Lista->Count - 1];
+			else
+				return nullptr;
+		}
+
+		datos_atencion^ Anterior(String^ nombreBuscado)
+		{
+			for (int i = 0; i < Lista->Count; i++) {
+				if (Lista[i]->getcliente()->getNombre()->Equals(nombreBuscado,
+					StringComparison::InvariantCultureIgnoreCase)) {
+					if (i > 0)
+						return Lista[i - 1]; // anterior 
+					else
+						return nullptr; // no hay anterior 
+				}
+			}
+			return nullptr;
+		}
+
+		datos_atencion^ Siguiente(String^ nombreBuscado)
+		{
+			for (int i = 0; i < Lista->Count; i++) {
+				if (Lista[i]->getcliente()->getNombre()-> Equals(nombreBuscado, StringComparison::InvariantCultureIgnoreCase)) {
+					if (i < Lista->Count - 1)
+						return Lista[i + 1]; // siguiente 
+					else
+						return nullptr; // no hay siguiente 
+				}
+			}
+			return nullptr;
+		}
+
+		int ObtenerCantidad() {
+			return Lista->Count;
+		}
+
+		List<datos_atencion^>^ ObtenerLista() {
+			return Lista;
+		}
+			bool Eliminar(String ^ nombreBuscado) {
+				for (int i = 0; i < Lista->Count; i++) {
+					if (Lista[i]->getcliente()->getNombre()->Equals(nombreBuscado,
+						StringComparison::InvariantCultureIgnoreCase)) {
+						Lista->RemoveAt(i);// elimina 
+						return true;
+					}
+				}
+				return false;
+
+			}
+
+	};
 }
